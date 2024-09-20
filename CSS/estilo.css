@@ -1,0 +1,71 @@
+.contenedor
+{
+    background-color: aquamarine;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+
+    grid-template-areas: "header   header  header"
+                         "nav     nav     nav"
+                         "section section ads"
+                         "footer  footer  footer" ;
+}
+.contenedor .header
+{
+    background-color: green;
+    grid-column: header;
+}
+.contenedor .nav
+{
+    background-color: rgb(88, 88, 235);
+    grid-column: nav;
+}
+.contenedor .section
+{
+    background-color: burlywood;
+    grid-column: section;
+}
+.contenedor .division1
+{
+    background-color: rgb(218, 199, 35);
+    grid-column: division1;
+    position: absolute;
+    left: 15%;
+    top: 18%;
+}
+.contenedor .division2
+{
+    background-color: rgb(218, 199, 35);
+    grid-column: division2;
+    position: absolute;
+    left: 48%;
+    top: 18%;
+}
+.contenedor .ads
+{
+    background-color:rgb(126, 36, 216);
+    grid-column: ads;
+}
+.contenedor .p1
+{
+    background-color: rgb(115, 228, 63);
+    grid-column: p1;
+    position: relative;
+    top: 10%;
+}
+.contenedor .p2
+{
+    background-color: rgb(115, 228, 63);
+    grid-column: p2;
+    position: relative;
+    top: 20%;
+}
+.contenedor .footer
+{
+    background-color: rgb(85, 157, 224);
+    grid-column: footer;
+}
